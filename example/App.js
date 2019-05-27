@@ -1,19 +1,18 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import FastImage from "react-native-fast-image";
 import VideoModal from "./lib/src/VideoModal";
 
-const source2 = {
+const source = {
   uri:
-    "https://tkmlive.konya.bel.tr/streams/hls/710/ae595306-ab6e-4253-8d19-83ccc3887b94.m3u8",
-  type: "m3u8"
+    "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
 };
 
 export default class App extends Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Text>HELLO</Text>
-        <VideoModal title="Test Video Stream" source={source2} />
+        <VideoModal title="Test Video Stream" source={source} />
       </View>
     );
   }

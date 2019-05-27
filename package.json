@@ -1,14 +1,14 @@
 {
-  "name": "react-native-dynamic-search-bar",
-  "version": "0.1.11",
-  "description": "Fully customizable and dynamic Search Bar for React Native.",
+  "name": "@paraboly/react-native-video-modal",
+  "version": "0.0.1",
+  "description": "Fully customizable Video Modal for React Native via Paraboly.",
   "keywords": [
-    "gradient",
-    "card",
-    "search",
-    "search-bar",
-    "dynamic",
-    "dynamic-search-bar",
+    "video",
+    "video-stream",
+    "stream",
+    "modal",
+    "video-modal",
+    "paraboly",
     "FreakyCoder",
     "freakycoder",
     "kuray",
@@ -20,15 +20,21 @@
     "rn"
   ],
   "homepage": "https://www.freakycoder.com",
-  "bugs": "https://github.com/WrathChaos/react-native-dynamic-search-bar/issues",
-  "main": "./lib/src/SearchBar.js",
-  "repository": "git@github.com:WrathChaos/react-native-dynamic-search-bar.git",
+  "bugs": "https://github.com/Paraboly/react-native-video-modal/issues",
+  "main": "./lib/src/VideoModal.js",
+  "repository": "git@github.com:Paraboly/react-native-video-modal.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "react": ">= 16.x.x",
     "react-native": ">= 0.55.x",
+    "react-native-video": ">= 4.4.1",
     "react-native-vector-icons": ">= 6.x.x",
-    "react-native-dynamic-vector-icons": ">= x.x.x"
+    "react-native-material-ripple": ">= 0.8.0",
+    "@paraboly/react-native-modal-box": ">= 0.0.1",
+    "react-native-dynamic-vector-icons": ">= x.x.x",
+    "@freakycoder/react-native-helpers": ">= 0.0.12",
+    "react-native-floating-action-button": ">= 0.1.14",
+    "@freakycoder/react-native-custom-text": ">= 0.0.12"
   }
 }
