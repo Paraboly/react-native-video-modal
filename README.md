@@ -61,6 +61,7 @@ npm i @paraboly/react-native-card
 | onClosed                |  function  |              null               | set your own logic for the modal onClose function                            |
 | backdrop                |  boolean   |              true               | change the backdrop visibility                                               |
 | coverScreen             |  boolean   |              false              | change it for cover the screen for modal                                     |
+| backgroundColor         |   color    |             "black"             | change the modal's background color                                          |
 | textColor               |   color    |             "white"             | change the title's color                                                     |
 | fontFamily              | FontFamily |             default             | set your own FontFamily for the title                                        |
 | buttonSize              |   number   |               40                | change FAB buttons' size                                                     |
