@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
 import FastImage from "react-native-fast-image";
-import VideoModal from "./lib/src/VideoModal";
+import VideoModal from "@paraboly/react-native-video-modal";
+
+const logo = require("./assets/parabol_logo.png");
 
 const source = {
   uri:
@@ -12,6 +14,11 @@ export default class App extends Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <FastImage
+          source={logo}
+          resizeMode="contain"
+          style={{ width: 300, height: 100 }}
+        />
         <VideoModal title="Test Video Stream" source={source} />
       </View>
     );
