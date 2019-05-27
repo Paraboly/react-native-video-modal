@@ -7,7 +7,7 @@ const logo = require("./assets/parabol_logo.png");
 
 const source = {
   uri:
-    "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 };
 
 export default class App extends Component {
