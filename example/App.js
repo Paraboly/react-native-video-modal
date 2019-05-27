@@ -13,12 +13,17 @@ const source = {
 export default class App extends Component {
   render() {
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <FastImage
-          source={logo}
-          resizeMode="contain"
-          style={{ width: 300, height: 100 }}
-        />
+      <View style={{ flex: 1 }}>
+        <View
+          style={{ top: 128, alignItems: "center", justifyContent: "center" }}
+        >
+          <FastImage
+            source={logo}
+            resizeMode="contain"
+            style={{ width: 300, height: 100 }}
+          />
+        </View>
+
         <VideoModal title="Test Video Stream" source={source} />
       </View>
     );
