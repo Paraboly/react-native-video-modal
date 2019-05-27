@@ -40,7 +40,7 @@ npm i @paraboly/react-native-card
 ## Basic Usage
 
 ```js
-<VideoModal title="Test Video Stream" source={source2} />
+<VideoModal title="Test Video Stream" source={source} />
 ```
 
 ### Example Application
