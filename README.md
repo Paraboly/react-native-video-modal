@@ -4,7 +4,6 @@ Fully customizable Video Modal for React Native via Paraboly.
 
 [![npm version](https://img.shields.io/npm/v/@paraboly/react-native-video-modal.svg)](https://www.npmjs.com/package/@paraboly/react-native-video-modal)
 [![npm](https://img.shields.io/npm/dt/@paraboly/react-native-video-modal.svg)](https://www.npmjs.org/package/@paraboly/react-native-video-modal)
-![expo-compatible](https://img.shields.io/badge/Expo-compatible-9cf.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Video Modal
