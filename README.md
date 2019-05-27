@@ -45,7 +45,7 @@ npm i @paraboly/react-native-card
 
 ### Example Application
 
-- [check the code](examples/App.js), and yes! :) all of the images, screenshots are directly taken
+- [check the code](example/App.js), and yes! :) all of the images, screenshots are directly taken
   from the this example. Of course, you can simply clone the project and run the example on your own environment.
 
 ### Configuration - Props
