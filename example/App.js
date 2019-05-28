@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
 import FastImage from "react-native-fast-image";
 import VideoModal from "@paraboly/react-native-video-modal";
 

@@ -28,6 +28,7 @@ npm i @paraboly/react-native-card
 "react": ">= 16.x.x",
 "react-native": ">= 0.55.x",
 "react-native-video": ">= 4.4.1",
+"react-native-spinkit": ">= 1.3.0",
 "react-native-vector-icons": ">= 6.x.x",
 "react-native-material-ripple": ">= 0.8.0",
 "@paraboly/react-native-modal-box": ">= 0.0.1",
