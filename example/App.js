@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
 import FastImage from "react-native-fast-image";
-// import VideoModal from "@paraboly/react-native-video-modal";
-import VideoModal from "./lib/src/VideoModal";
+import VideoModal from "@paraboly/react-native-video-modal";
 
 const logo = require("./assets/parabol_logo.png");
 
@@ -30,12 +29,3 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
-  }
-});

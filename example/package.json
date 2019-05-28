@@ -10,7 +10,7 @@
     "@freakycoder/react-native-custom-text": "0.0.12",
     "@freakycoder/react-native-helpers": "0.0.12",
     "@paraboly/react-native-modal-box": "0.0.1",
-    "@paraboly/react-native-video-modal": "0.0.12",
+    "@paraboly/react-native-video-modal": "0.0.14",
     "react": "16.8.3",
     "react-native": "0.59.8",
     "react-native-dynamic-vector-icons": "0.0.3",

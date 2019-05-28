@@ -1,6 +1,6 @@
 {
   "name": "@paraboly/react-native-video-modal",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Fully customizable Video Modal for React Native via Paraboly.",
   "keywords": [
     "video",
