@@ -105,8 +105,6 @@ npm i @paraboly/react-native-card
 
 ### [React Native Spinkit](https://github.com/maxs15/react-native-spinkit)
 
-loadingSize, loadingType, loadingColor, loadingIsVisible
-
 ## Author
 
 FreakyCoder, kurayogun@gmail.com | kuray.ogun@paraboly.com
