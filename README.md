@@ -1,6 +1,6 @@
 <img alt="Paraboly React Native Video Modal" src="https://github.com/Paraboly/react-native-video-modal/blob/master/assets/Screenshots/logo.png" width="1050"/>
 
-Fully customizable Video Modal for React Native via Paraboly.
+Fully customizable, loading style implemented Video Modal for React Native via Paraboly.
 
 [![npm version](https://img.shields.io/npm/v/@paraboly/react-native-video-modal.svg)](https://www.npmjs.com/package/@paraboly/react-native-video-modal)
 [![npm](https://img.shields.io/npm/dt/@paraboly/react-native-video-modal.svg)](https://www.npmjs.org/package/@paraboly/react-native-video-modal)
@@ -51,33 +51,61 @@ npm i @paraboly/react-native-card
 
 ### Configuration - Props
 
-| Property                |    Type    |             Default             | Description                                                                  |
-| ----------------------- | :--------: | :-----------------------------: | ---------------------------------------------------------------------------- |
-| title                   |   string   |               ""                | use this to change the title                                                 |
-| source                  |   source   |               uri               | use this to set your own source for the Video Modal                          |
-| isOpen                  |  boolean   |              true               | change the automatically open modal                                          |
-| easing                  |   easing   |        Easing.elastic(1)        | change the easing animation option                                           |
-| refName                 |   string   |              null               | set ref name for the modal                                                   |
-| onOpened                |  function  |              null               | set your own logic for the modal onOpen function                             |
-| onClosed                |  function  |              null               | set your own logic for the modal onClose function                            |
-| backdrop                |  boolean   |              true               | change the backdrop visibility                                               |
-| coverScreen             |  boolean   |              false              | change it for cover the screen for modal                                     |
-| backgroundColor         |   color    |             "black"             | change the modal's background color                                          |
-| textColor               |   color    |             "white"             | change the title's color                                                     |
-| fontFamily              | FontFamily |             default             | set your own FontFamily for the title                                        |
-| buttonSize              |   number   |               40                | change FAB buttons' size                                                     |
-| resizeMode              |   string   |            "contain"            | change the video resize mode                                                 |
-| modalWidth              |   number   |        ScreenWidth * 0.9        | change the modal's width                                                     |
-| modalHeight             |   number   |               350               | change the modal's height                                                    |
-| modalBottom             |   number   |               18                | change title's font size                                                     |
-| titleStyle              |   style    | { bottom: ScreenHeight * 0.55 } | IMPORANT! it should be style to give it as bottom adjustment                 |
-| heartOnPress            |  function  |              null               | set your own logic for heart button                                          |
-| fullScreenOnPress       |  function  |    Open the fullscreen video    | set your own logic for fullscreen button                                     |
-| disableButtons          |  boolean   |              false              | disable the buttons                                                          |
-| buttonsComponent        | component  |         check the code          | set your own button and its logic with your own component                    |
-| videoPlayerStyle        |   style    |         check the code          | set your own style for the video player                                      |
-| heartIconComponent      | component  |               FAB               | set your own style for button component instead of heart icon component      |
-| fullScreenIconComponent | component  |               FAB               | set your own style for button component instead of fullscreen icon component |
+| Property                |    Type    |             Default             | Description                                                                          |
+| ----------------------- | :--------: | :-----------------------------: | ------------------------------------------------------------------------------------ |
+| title                   |   string   |               ""                | use this to change the title                                                         |
+| source                  |   source   |               uri               | use this to set your own source for the Video Modal                                  |
+| isOpen                  |  boolean   |              true               | change the automatically open modal                                                  |
+| easing                  |   easing   |        Easing.elastic(1)        | change the easing animation option                                                   |
+| refName                 |   string   |              null               | set ref name for the modal                                                           |
+| onOpened                |  function  |              null               | set your own logic for the modal onOpen function                                     |
+| onClosed                |  function  |              null               | set your own logic for the modal onClose function                                    |
+| backdrop                |  boolean   |              true               | change the backdrop visibility                                                       |
+| coverScreen             |  boolean   |              false              | change it for cover the screen for modal                                             |
+| backgroundColor         |   color    |             "black"             | change the modal's background color                                                  |
+| textColor               |   color    |             "white"             | change the title's color                                                             |
+| fontFamily              | FontFamily |             default             | set your own FontFamily for the title                                                |
+| buttonSize              |   number   |               40                | change FAB buttons' size                                                             |
+| resizeMode              |   string   |            "contain"            | change the video resize mode                                                         |
+| modalWidth              |   number   |        ScreenWidth * 0.9        | change the modal's width                                                             |
+| modalHeight             |   number   |               350               | change the modal's height                                                            |
+| modalBottom             |   number   |               18                | change title's font size                                                             |
+| titleStyle              |   style    | { bottom: ScreenHeight * 0.55 } | IMPORANT! it should be style to give it as bottom adjustment                         |
+| heartOnPress            |  function  |              null               | set your own logic for heart button                                                  |
+| fullScreenOnPress       |  function  |    Open the fullscreen video    | set your own logic for fullscreen button                                             |
+| disableButtons          |  boolean   |              false              | disable the buttons                                                                  |
+| buttonsComponent        | component  |         check the code          | set your own button and its logic with your own component                            |
+| videoPlayerStyle        |   style    |         check the code          | set your own style for the video player                                              |
+| heartIconComponent      | component  |               FAB               | set your own style for button component instead of heart icon component              |
+| fullScreenIconComponent | component  |               FAB               | set your own style for button component instead of fullscreen icon component         |
+| loadingSize             |   number   |               40                | change the loading icon's size                                                       |
+| loadingType             |   string   |        "FadingCircleAlt"        | change the type of loading icon                                                      |
+| loadingColor            |   color    |             "white"             | change the color of loading icon                                                     |
+| loadingIsVisible        |  boolean   | business logic (check the code) | if you do not want to use default logic, you can change this prop to implement yours |
+
+
+### List of loading available types
+
+- CircleFlip
+- Bounce
+- Wave
+- WanderingCubes
+- Pulse
+- ChasingDots
+- ThreeBounce
+- Circle
+- 9CubeGrid
+- WordPress (IOS only)
+- FadingCircle
+- FadingCircleAlt
+- Arc (IOS only)
+- ArcAlt (IOS only)
+
+## More Information about Loading SpinKit
+
+### [React Native Spinkit](https://github.com/maxs15/react-native-spinkit)
+
+loadingSize, loadingType, loadingColor, loadingIsVisible
 
 ## Author
 
