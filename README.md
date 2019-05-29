@@ -70,10 +70,13 @@ npm i @paraboly/react-native-card
 | modalWidth              |   number   |        ScreenWidth * 0.9        | change the modal's width                                                             |
 | modalHeight             |   number   |               350               | change the modal's height                                                            |
 | modalBottom             |   number   |               18                | change title's font size                                                             |
+| shadowColor             |   color    |             "#000"              | change main video modal's shadow color                                               |
+| shadowStyle             |   style    |         check the code          | set your own shadow style for the main video modal                                   |
 | titleStyle              |   style    | { bottom: ScreenHeight * 0.55 } | IMPORANT! it should be style to give it as bottom adjustment                         |
 | heartOnPress            |  function  |              null               | set your own logic for heart button                                                  |
 | fullScreenOnPress       |  function  |    Open the fullscreen video    | set your own logic for fullscreen button                                             |
 | disableButtons          |  boolean   |              false              | disable the buttons                                                                  |
+| buttonContainerStyle    |   style    |         check the code          | set your own button container style                                                  |
 | buttonsComponent        | component  |         check the code          | set your own button and its logic with your own component                            |
 | videoPlayerStyle        |   style    |         check the code          | set your own style for the video player                                              |
 | heartIconComponent      | component  |               FAB               | set your own style for button component instead of heart icon component              |

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 import FastImage from "react-native-fast-image";
-import VideoModal from "@paraboly/react-native-video-modal";
+// import VideoModal from "@paraboly/react-native-video-modal";
+import VideoModal from "./lib/src/VideoModal";
 
 const logo = require("./assets/parabol_logo.png");
 
