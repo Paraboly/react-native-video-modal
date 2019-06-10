@@ -1,4 +1,4 @@
-<img alt="Paraboly React Native Video Modal" src="https://github.com/Paraboly/react-native-video-modal/blob/master/assets/Screenshots/op_logo.png" width="1050"/>
+<img alt="Paraboly React Native Video Modal" src="https://github.com/Paraboly/react-native-video-modal/blob/master/assets/op_logo.png" width="1050"/>
 
 Fully customizable, loading style implemented Video Modal for React Native via Paraboly.
 
