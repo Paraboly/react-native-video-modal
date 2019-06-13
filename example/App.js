@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { View, WebView } from "react-native";
 import FastImage from "react-native-fast-image";
 import VideoModal from "@paraboly/react-native-video-modal";
 
@@ -11,6 +11,22 @@ const source = {
 };
 
 export default class App extends Component {
+  renderWebview() {
+    return (
+      <View style={{ width: "100%", height: 200 }}>
+        <WebView
+          javaScriptEnabled
+          domStorageEnabled
+          startInLoadingState
+          source={{
+            uri: "your-stream-url"
+          }}
+          style={{ width: "100%", height: "100%", marginTop: 24 }}
+        />
+      </View>
+    );
+  }
+
   render() {
     return (
       <View style={{ flex: 1 }}>
@@ -23,8 +39,11 @@ export default class App extends Component {
             style={{ width: 300, height: 100 }}
           />
         </View>
-
-        <VideoModal title="Test Video Stream" source={source} />
+        <VideoModal
+          source={source}
+          title="Test Video Stream"
+          customVideoComponent={this.renderWebview()}
+        />
       </View>
     );
   }
