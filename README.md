@@ -85,6 +85,7 @@ npm i @paraboly/react-native-card
 | loadingType             |   string   |        "FadingCircleAlt"        | change the type of loading icon                                                      |
 | loadingColor            |   color    |             "white"             | change the color of loading icon                                                     |
 | loadingIsVisible        |  boolean   | business logic (check the code) | if you do not want to use default logic, you can change this prop to implement yours |
+| customVideoComponent    | component  |        (check the code)         | you can implement your own video component as well                                   |
 
 
 ### List of loading available types
