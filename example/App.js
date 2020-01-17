@@ -8,9 +8,8 @@ import VideoModal from "./lib/src/VideoModal";
 const logo = require("./assets/parabol_logo.png");
 
 const source = {
-  // uri:
-  //   "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-  uri: "http://player.sehirkameralari.com/watch/5baa3a28675f2"
+  uri:
+    "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 };
 
 export default class App extends Component {
@@ -18,12 +17,13 @@ export default class App extends Component {
     return (
       <View style={{ width: "100%", height: 200 }}>
         <WebView
+          source={source}
+          useWebKit={true}
           javaScriptEnabled
           domStorageEnabled
           startInLoadingState
-          source={{
-            uri: "your-stream-url"
-          }}
+          originWhitelist={["*"]}
+          allowsInlineMediaPlayback={true}
           style={{ width: "100%", height: "100%", marginTop: 24 }}
         />
       </View>
@@ -49,7 +49,6 @@ export default class App extends Component {
         <VideoModal
           source={source}
           title="Test Video Stream"
-
           // customVideoComponent={this.renderWebview()}
         />
       </SafeAreaView>
