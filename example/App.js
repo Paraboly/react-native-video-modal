@@ -1,13 +1,16 @@
 import React, { Component } from "react";
-import { View, WebView } from "react-native";
+import { View, SafeAreaView, Text, TouchableOpacity } from "react-native";
+import { WebView } from "react-native-webview";
 import FastImage from "react-native-fast-image";
-import VideoModal from "@paraboly/react-native-video-modal";
+// import VideoModal from "@paraboly/react-native-video-modal";
+import VideoModal from "./lib/src/VideoModal";
 
 const logo = require("./assets/parabol_logo.png");
 
 const source = {
-  uri:
-    "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+  // uri:
+  //   "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+  uri: "http://player.sehirkameralari.com/watch/5baa3a28675f2"
 };
 
 export default class App extends Component {
@@ -29,9 +32,13 @@ export default class App extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <SafeAreaView style={{ flex: 1, alignItems: "center" }}>
         <View
-          style={{ top: 128, alignItems: "center", justifyContent: "center" }}
+          style={{
+            marginTop: "30%",
+            alignItems: "center",
+            justifyContent: "center"
+          }}
         >
           <FastImage
             source={logo}
@@ -42,9 +49,10 @@ export default class App extends Component {
         <VideoModal
           source={source}
           title="Test Video Stream"
-          customVideoComponent={this.renderWebview()}
+
+          // customVideoComponent={this.renderWebview()}
         />
-      </View>
+      </SafeAreaView>
     );
   }
 }
